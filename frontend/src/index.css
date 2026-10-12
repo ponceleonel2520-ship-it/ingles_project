@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: white;
+  color: #222;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
+
+.encabezado {
+  padding: 20px 24px;
+}
+
+.encabezado h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.menu a {
+  color: #555;
+  text-decoration: none;
+}
+
+.menu a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.contenido {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 24px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.tarjeta {
+  padding: 0;
+}
+
+.boton {
+  display: inline-block;
+  background: #ced5e4;
+  color: rgb(17, 14, 14);
+  padding: 8px 14px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.boton:hover {
+  background: #fefeff;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 8px;
+  background: #f0f0f0;
+  font-size: 15px;
+}
+
+.mensaje {
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  padding: 8px 12px 8px 0;
+  text-align: left;
+}
+
+th {
+  color: #555;
+}
+
+.pie {
+  padding: 20px 24px;
+  color: #777;
+}
